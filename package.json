@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +16,6 @@
     "express": "^4.18.2",
     "nodemon": "^1.19.1"
   },
+  "devDependencies": {},
   "description": ""
 }
