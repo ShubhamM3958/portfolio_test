@@ -2,14 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "main": "index.js",
-  "engines": {
-    "node": "18.x",
-    "dev": "nodemon index.js"
-  },
-  "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
-  },
+  
   "author": "",
   "license": "ISC",
   "dependencies": {
