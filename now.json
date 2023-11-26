@@ -1,15 +1,23 @@
 {
   "version": 2,
-  "builds": [{ "src": "index.js", "use": "@now/node-server" }],
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node-server",
+      "env": {
+        "NODE_OPTIONS": "--openssl-legacy-provider"
+      }
+    }
+  ],
   "routes": [
     {
       "src": "/users",
-      "dest": "/inde.js",
+      "dest": "/index.js",
       "methods": ["GET"]
     },
     {
       "src": "/user",
-      "dest": "/inde.js",
+      "dest": "/index.js",
       "methods": ["POST"]
     }
   ]
