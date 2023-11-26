@@ -1,0 +1,89 @@
+body{
+  background-color: #B6FFFA;
+  color: #687EFF;
+
+  transition: background-color 0.5s ease-out;
+
+}
+.profile{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.nav-link{
+  font-size: 18px;
+}
+#information{
+  margin-top: 50px;
+}
+#object{
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 165, 0, 0.7);
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  transition: padding 0.8s ease;
+  box-shadow: 0px 0px 30px 5px rgba(226, 158, 31, 0.7); 
+}
+#tree {
+  transition: filter 0.5s ease;
+}
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: radial-gradient(ellipse at center, rgba(255, 165, 0, 0.7), rgba(0, 0, 0, 0));
+}
+.social{
+  border-radius: 50%;
+  color: white;
+  background-color: #333333;
+}
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-top-color: #00aaff;
+  width: 5%;
+  border-top-width: 5px;
+  margin: 100px auto;
+}
+section{
+  transition: 1s;
+  transform: translateX(-100%);
+}
+section{
+  min-height: 100vh;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+section p{
+  margin-top: 30px;
+}
+.strokeme
+{
+    color: white;
+    text-shadow:
+    -0.5px -0.5px 0 #000,
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;  
+}
+.programming{
+  color: gray;
+  font-size: 60px;
+  margin: 5px 5px 5px 0px;
+}
+.programming:hover{
+  color:#687EFF;
+}
+footer {
+  background-color: #343a40; /* Dark background color for the footer */
+  padding: 20px 0;
+}
