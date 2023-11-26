@@ -31,6 +31,7 @@ body{
 }
 #tree {
   transition: filter 0.5s ease;
+  width: 100%;
 }
 .gradient-overlay {
   position: absolute;
@@ -46,8 +47,8 @@ body{
 hr {
   border-style: none;
   border-top-style: dotted;
-  border-top-color: #00aaff;
-  width: 5%;
+  border-top-color: white;
+  width: 8%;
   border-top-width: 5px;
   margin: 100px auto;
 }
@@ -61,7 +62,7 @@ section{
   align-items:center;
   justify-content:center;
   flex-direction: column;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 section p{
   margin-top: 30px;
@@ -77,13 +78,13 @@ section p{
 }
 .programming{
   color: gray;
-  font-size: 60px;
+  font-size: 3rem;
   margin: 5px 5px 5px 0px;
 }
 .programming:hover{
   color:#687EFF;
 }
 footer {
-  background-color: #343a40; /* Dark background color for the footer */
+  background-color: #343a40;
   padding: 20px 0;
 }
