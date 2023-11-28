@@ -50,7 +50,7 @@ window.onscroll = function () {
     object.style.background = 'rgba(255, 165, 0, 0.7)';
     element.style.transition = "transform 0.5s ease";
     scrollPosition = window.scrollY / 2;
-    sky.style.backgroundColor = "#B6FFFA";
+    sky.style.backgroundColor = "#87CEEB";
     //object.src = 'https://freepngimg.com/download/sun/23533-7-sun-transparent-image.png';
     object.style.padding = '0px';
 
