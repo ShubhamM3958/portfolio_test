@@ -5,9 +5,19 @@ body{
   transition: background-color 0.5s ease-out;
 
 }
+.navbar-nav a:hover {
+  font-weight: 500;
+}
+
+#nav-item {
+  color: #687EFF;
+  padding-left: 20px;
+  padding-right: 5px;
+  font-size: 20px;
+}
 .profile{
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
@@ -26,12 +36,16 @@ body{
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
-  transition: padding 0.8s ease;
+  transition: padding 0.5s ease;
   box-shadow: 0px 0px 30px 5px rgba(226, 158, 31, 0.7); 
+}
+.heading{
+  font-size: 3rem;
 }
 #tree {
   transition: filter 0.5s ease;
   width: 100%;
+  top: -2rem;
 }
 .gradient-overlay {
   position: absolute;
@@ -58,6 +72,7 @@ section{
 }
 section{
   min-height: 100vh;
+
   display: flex;
   align-items:center;
   justify-content:center;
@@ -85,6 +100,6 @@ section p{
   color:#687EFF;
 }
 footer {
-  background-color: #343a40;
   padding: 20px 0;
+  color: white;
 }

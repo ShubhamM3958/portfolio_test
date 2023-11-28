@@ -42,22 +42,23 @@ window.onscroll = function () {
 
   let scrollPosition;
   const imageBottom = tree.offsetHeight + tree.offsetTop - tree.offsetWidth / 2;
+  const imageTop = tree.getBoundingClientRect().top + window.scrollY;
   // Get the scroll position
-  if (window.scrollY <= imageBottom + 85) {
+  if (window.scrollY <= imageTop + 0) {
     //console.log(window.scrollY);
     tree.style.filter = 'brightness(90%)';
     object.style.background = 'rgba(255, 165, 0, 0.7)';
-    element.style.transition = "transform 0.8s ease";
+    element.style.transition = "transform 0.5s ease";
     scrollPosition = window.scrollY / 2;
     sky.style.backgroundColor = "#B6FFFA";
-    object.src = 'https://freepngimg.com/download/sun/23533-7-sun-transparent-image.png';
+    //object.src = 'https://freepngimg.com/download/sun/23533-7-sun-transparent-image.png';
     object.style.padding = '0px';
 
   }
   else {
-    tree.style.filter = 'brightness(40%)';
+    tree.style.filter = 'brightness(20%)';
     //element.style.transition = "none";
-    scrollPosition = window.scrollY / 2;
+    scrollPosition = (window.scrollY / 2) + 30;
     // sky.style.backgroundColor = '#0f0f0f';
     sky.style.backgroundColor = 'black';
     object.style.background = 'rgba(255, 255, 255, 0.5)';
@@ -66,6 +67,7 @@ window.onscroll = function () {
 
   element.style.transform = `translateY(${scrollPosition + scrollPosition}px)`;
 };
+
 aboutLink.addEventListener('click', function (event) {
   event.preventDefault();
   aboutSection.scrollIntoView({ behavior: 'smooth' });
